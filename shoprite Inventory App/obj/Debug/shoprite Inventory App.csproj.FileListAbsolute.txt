@@ -15,3 +15,19 @@ C:\Users\erica selasie\Desktop\shoprite Inventory App\obj\Debug\shoprite_Invento
 C:\Users\erica selasie\Desktop\shoprite Inventory App\bin\Debug\Guna.UI.dll
 C:\Users\erica selasie\Desktop\shoprite Inventory App\obj\Debug\shoprite Inventory App.csproj.CopyComplete
 C:\Users\erica selasie\Desktop\shoprite Inventory App\obj\Debug\shoprite_Inventory_App.SalesForm.resources
+C:\Users\erica selasie\Desktop\Shoprite Git\Shoprite\shoprite Inventory App\bin\Debug\shoprite Inventory App.exe.config
+C:\Users\erica selasie\Desktop\Shoprite Git\Shoprite\shoprite Inventory App\bin\Debug\shoprite Inventory App.exe
+C:\Users\erica selasie\Desktop\Shoprite Git\Shoprite\shoprite Inventory App\bin\Debug\shoprite Inventory App.pdb
+C:\Users\erica selasie\Desktop\Shoprite Git\Shoprite\shoprite Inventory App\obj\Debug\shoprite Inventory App.csproj.AssemblyReference.cache
+C:\Users\erica selasie\Desktop\Shoprite Git\Shoprite\shoprite Inventory App\obj\Debug\shoprite_Inventory_App.CategoriesForm.resources
+C:\Users\erica selasie\Desktop\Shoprite Git\Shoprite\shoprite Inventory App\obj\Debug\shoprite_Inventory_App.LoginForm.resources
+C:\Users\erica selasie\Desktop\Shoprite Git\Shoprite\shoprite Inventory App\obj\Debug\shoprite_Inventory_App.ProductsForm.resources
+C:\Users\erica selasie\Desktop\Shoprite Git\Shoprite\shoprite Inventory App\obj\Debug\shoprite_Inventory_App.Properties.Resources.resources
+C:\Users\erica selasie\Desktop\Shoprite Git\Shoprite\shoprite Inventory App\obj\Debug\shoprite_Inventory_App.SalesForm.resources
+C:\Users\erica selasie\Desktop\Shoprite Git\Shoprite\shoprite Inventory App\obj\Debug\shoprite_Inventory_App.Splash.resources
+C:\Users\erica selasie\Desktop\Shoprite Git\Shoprite\shoprite Inventory App\obj\Debug\shoprite_Inventory_App.AttendantForm.resources
+C:\Users\erica selasie\Desktop\Shoprite Git\Shoprite\shoprite Inventory App\obj\Debug\shoprite Inventory App.csproj.GenerateResource.cache
+C:\Users\erica selasie\Desktop\Shoprite Git\Shoprite\shoprite Inventory App\obj\Debug\shoprite Inventory App.csproj.CoreCompileInputs.cache
+C:\Users\erica selasie\Desktop\Shoprite Git\Shoprite\shoprite Inventory App\obj\Debug\shoprite Inventory App.csproj.CopyComplete
+C:\Users\erica selasie\Desktop\Shoprite Git\Shoprite\shoprite Inventory App\obj\Debug\shoprite Inventory App.exe
+C:\Users\erica selasie\Desktop\Shoprite Git\Shoprite\shoprite Inventory App\obj\Debug\shoprite Inventory App.pdb

@@ -47,5 +47,23 @@ namespace shoprite_Inventory_App
         {
             datelabel.Text = DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString();
         }
+        int GrdTotal = 0;
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int n = 0;
+            int total = Convert.ToInt32(ProductQty.Text) * Convert.ToInt32(ProductPrice.Text);
+            DataGridViewRow newRow = new DataGridViewRow();
+            newRow.CreateCells(orderDisplay);
+            newRow.Cells[0].Value = n + 1;
+            newRow.Cells[1].Value = ProductName.Text;
+            newRow.Cells[2].Value = ProductPrice.Text;
+            newRow.Cells[3].Value = ProductQty.Text;
+            newRow.Cells[4].Value = Convert.ToInt32(ProductQty.Text)* Convert.ToInt32(ProductPrice.Text);
+            orderDisplay.Rows.Add(newRow);
+            GrdTotal = GrdTotal + total;
+            amountLabel.Text ="Rs"+GrdTotal;
+
+
+        }
     }
 }
