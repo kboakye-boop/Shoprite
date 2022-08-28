@@ -31,12 +31,26 @@ namespace shoprite_Inventory_App
 
 
         }
+        private void populateBill()
+        {
+            Con.Open();
+            String query = "select * from BillTable";
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var data = new DataSet();
+            sda.Fill(data);
+            salesListDisplay.DataSource = data.Tables[0];
+            Con.Close();
+
+
+        }
 
         private void SalesForm_Load(object sender, EventArgs e)
         {
             populate();
+            populateBill();
         }
-
+        int flag = 0;
         private void salesDisplay_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             ProductName.Text =salesDisplay.SelectedRows[0].Cells[0].Value.ToString();
@@ -48,22 +62,99 @@ namespace shoprite_Inventory_App
             datelabel.Text = DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString();
         }
         int GrdTotal = 0;
+        int n = 0;
         private void button5_Click(object sender, EventArgs e)
         {
-            int n = 0;
-            int total = Convert.ToInt32(ProductQty.Text) * Convert.ToInt32(ProductPrice.Text);
-            DataGridViewRow newRow = new DataGridViewRow();
-            newRow.CreateCells(orderDisplay);
-            newRow.Cells[0].Value = n + 1;
-            newRow.Cells[1].Value = ProductName.Text;
-            newRow.Cells[2].Value = ProductPrice.Text;
-            newRow.Cells[3].Value = ProductQty.Text;
-            newRow.Cells[4].Value = Convert.ToInt32(ProductQty.Text)* Convert.ToInt32(ProductPrice.Text);
-            orderDisplay.Rows.Add(newRow);
-            GrdTotal = GrdTotal + total;
-            amountLabel.Text ="Rs"+GrdTotal;
+            if (ProductName.Text == "" || ProductQty.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                
+                int total = Convert.ToInt32(ProductQty.Text) * Convert.ToInt32(ProductPrice.Text);
+                DataGridViewRow newRow = new DataGridViewRow();
+                newRow.CreateCells(orderDisplay);
+                newRow.Cells[0].Value = n+1;
+                newRow.Cells[1].Value = ProductName.Text;
+                newRow.Cells[2].Value = ProductPrice.Text;
+                newRow.Cells[3].Value = ProductQty.Text;
+                newRow.Cells[4].Value = Convert.ToInt32(ProductQty.Text) * Convert.ToInt32(ProductPrice.Text);
+                orderDisplay.Rows.Add(newRow);
+                n++;
+                GrdTotal = GrdTotal + total;
+                amountLabel.Text = ""+ GrdTotal;
+            }
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (BillId.Text == "") 
+            {
+                MessageBox.Show("Missing Bill Id");
+            }
+            else {
+                try
+                {
+                    Con.Open();
+                    String query = "insert into BillTable  values(" + BillId.Text + ",'" + attendantNameLable.Text + "','" + datelabel.Text + "','" + amountLabel.Text + "')";
+                    SqlCommand cmd = new SqlCommand(query, Con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Order added successfully");
+                    Con.Close();
+                    populateBill();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void ProductId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void amountLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if(printPreviewDialog1.ShowDialog() == DialogResult.OK)
+            {
+                printDocument1.Print();
+            }
+        }
+
+        private void salesListDisplay_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            flag = 1; 
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("SALES RECEIPT", new Font("century Gothic", 25, FontStyle.Bold), Brushes.Red, new Point(250));
+            e.Graphics.DrawString("Bill Id:"+salesListDisplay.SelectedRows[0].Cells[0].Value.ToString(), new Font("century Gothic", 20, FontStyle.Bold), Brushes.Blue, new Point(100,70));
+            e.Graphics.DrawString("Attendant Name:" + salesListDisplay.SelectedRows[0].Cells[1].Value.ToString(), new Font("century Gothic", 20, FontStyle.Bold), Brushes.Blue, new Point(100,100));
+            e.Graphics.DrawString("Date:" + salesListDisplay.SelectedRows[0].Cells[2].Value.ToString(), new Font("century Gothic", 20, FontStyle.Bold), Brushes.Blue, new Point(100, 130));
+            e.Graphics.DrawString("Total Amount:" + salesListDisplay.SelectedRows[0].Cells[3].Value.ToString(), new Font("century Gothic", 20, FontStyle.Bold), Brushes.Blue, new Point(100, 160));
+            e.Graphics.DrawString("CodeSpace", new Font("century Gothic", 20, FontStyle.Italic), Brushes.Red, new Point(270,220));
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            populate();
+        }
+
+        private void ProductCat_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
+    
 }

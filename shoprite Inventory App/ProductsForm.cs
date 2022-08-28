@@ -160,5 +160,15 @@ namespace shoprite_Inventory_App
             ProductPrice.Text = productDisplay.SelectedRows[0].Cells[3].Value.ToString();
             ProductCat.SelectedValue = productDisplay.SelectedRows[0].Cells[4].Value.ToString();
         }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("SHOPRITE SALES LIST",new Font("Century Gothic",25,FontStyle.Bold),Brushes.Red,new Point(230));
+        }
+
+        private void ProductCat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
