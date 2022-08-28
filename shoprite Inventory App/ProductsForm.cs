@@ -222,5 +222,19 @@ namespace shoprite_Inventory_App
         {
             
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            AttendantForm attendant = new AttendantForm();
+            attendant.Show();
+            this.Hide();
+        }
     }
 }

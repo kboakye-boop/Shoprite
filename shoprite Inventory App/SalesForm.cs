@@ -116,6 +116,8 @@ namespace shoprite_Inventory_App
             else {
                 try
                 {
+
+
                     Con.Open();
                     String query = "insert into BillTable  values(" + BillId.Text + ",'" + attendantNameLable.Text + "','" + datelabel.Text + "','" + amountLabel.Text + "')";
                     SqlCommand cmd = new SqlCommand(query, Con);
@@ -123,12 +125,12 @@ namespace shoprite_Inventory_App
                     MessageBox.Show("Order added successfully");
                     Con.Close();
                     populateBill();
-
                 }
-                catch (Exception ex)
+                catch(Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("please add product to calculate total");
                 }
+               
             }
         }
 
@@ -159,7 +161,7 @@ namespace shoprite_Inventory_App
         {
             e.Graphics.DrawString("SALES RECEIPT", new Font("century Gothic", 25, FontStyle.Bold), Brushes.Red, new Point(250));
             e.Graphics.DrawString("Bill Id:"+salesListDisplay.SelectedRows[0].Cells[0].Value.ToString(), new Font("century Gothic", 20, FontStyle.Bold), Brushes.Blue, new Point(100,70));
-            e.Graphics.DrawString("Attendant Name:" + attendantNameLable, new Font("century Gothic", 20, FontStyle.Bold), Brushes.Blue, new Point(100,100));
+            e.Graphics.DrawString("Attendant Name:" + attendantNameLable.Text, new Font("century Gothic", 20, FontStyle.Bold), Brushes.Blue, new Point(100,100));
             e.Graphics.DrawString("Date:" + salesListDisplay.SelectedRows[0].Cells[2].Value.ToString(), new Font("century Gothic", 20, FontStyle.Bold), Brushes.Blue, new Point(100, 130));
             e.Graphics.DrawString("Total Amount:" + salesListDisplay.SelectedRows[0].Cells[3].Value.ToString(), new Font("century Gothic", 20, FontStyle.Bold), Brushes.Blue, new Point(100, 160));
             e.Graphics.DrawString("CodeSpace", new Font("century Gothic", 20, FontStyle.Italic), Brushes.Red, new Point(270,220));
@@ -199,6 +201,11 @@ namespace shoprite_Inventory_App
         }
 
         private void attendantNameLable_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }

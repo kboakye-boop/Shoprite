@@ -132,5 +132,12 @@ namespace shoprite_Inventory_App
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
+        }
     }
 }
