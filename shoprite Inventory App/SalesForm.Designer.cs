@@ -131,6 +131,7 @@ namespace shoprite_Inventory_App
             this.attendantNameLable.Size = new System.Drawing.Size(89, 24);
             this.attendantNameLable.TabIndex = 24;
             this.attendantNameLable.Text = "Attendant";
+            this.attendantNameLable.Click += new System.EventHandler(this.attendantNameLable_Click);
             // 
             // amountLabel
             // 

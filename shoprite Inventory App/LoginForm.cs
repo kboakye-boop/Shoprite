@@ -7,16 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace shoprite_Inventory_App
 {
     public partial class LoginForm : Form
     {
+        
         public LoginForm()
         {
             InitializeComponent();
         }
-
+         
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\erica selasie\Documents\shopritedb.mdf;Integrated Security=True;Connect Timeout=30");
+        
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -57,8 +61,28 @@ namespace shoprite_Inventory_App
                     }
                     else if (selectRole.SelectedItem.ToString() == "ATTENDANT")
                     {
-                        MessageBox.Show("you are a seller");
+                        //MessageBox.Show("you are a seller");
+                        Con.Open();
+                        String query = "select count(*) from AttendantTable1 where attendantUsername ='" + usernameTb.Text + "' and attendantPassword =  '" + passwordTb.Text + "'";
+                        SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, Con);
+                        DataTable table = new DataTable();
+                        sqlDataAdapter.Fill(table);
+                        if (table.Rows[0][0].ToString() == "1")
+                        {
+                            SalesForm.attendantname = usernameTb.Text;
+                            SalesForm salesForm = new SalesForm();
+                            salesForm.Show();
+                            this.Hide();
+                            Con.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Incorrect Username or Password");
+                        }
+                        Con.Close();
+                    
                     }
+
                 }
                 else
                 {
@@ -90,6 +114,18 @@ namespace shoprite_Inventory_App
         private void selectRole_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void passwordView_CheckedChanged(object sender, EventArgs e)
+        {
+            if (passwordView.Checked == true)
+            {
+                passwordTb.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                passwordTb.UseSystemPasswordChar = true;
+            }
         }
     }
 }

@@ -13,10 +13,12 @@ namespace shoprite_Inventory_App
 {
     public partial class SalesForm : Form
     {
+        
         public SalesForm()
         {
             InitializeComponent();
         }
+        public static string attendantname = "";
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\erica selasie\Documents\shopritedb.mdf;Integrated Security=True;Connect Timeout=30");
         private void populate()
         {
@@ -65,6 +67,7 @@ namespace shoprite_Inventory_App
             populate();
             populateBill();
             salesDropdown();
+            attendantNameLable.Text = attendantname;
         }
         int flag = 0;
         private void salesDisplay_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -156,7 +159,7 @@ namespace shoprite_Inventory_App
         {
             e.Graphics.DrawString("SALES RECEIPT", new Font("century Gothic", 25, FontStyle.Bold), Brushes.Red, new Point(250));
             e.Graphics.DrawString("Bill Id:"+salesListDisplay.SelectedRows[0].Cells[0].Value.ToString(), new Font("century Gothic", 20, FontStyle.Bold), Brushes.Blue, new Point(100,70));
-            e.Graphics.DrawString("Attendant Name:" + salesListDisplay.SelectedRows[0].Cells[1].Value.ToString(), new Font("century Gothic", 20, FontStyle.Bold), Brushes.Blue, new Point(100,100));
+            e.Graphics.DrawString("Attendant Name:" + attendantNameLable, new Font("century Gothic", 20, FontStyle.Bold), Brushes.Blue, new Point(100,100));
             e.Graphics.DrawString("Date:" + salesListDisplay.SelectedRows[0].Cells[2].Value.ToString(), new Font("century Gothic", 20, FontStyle.Bold), Brushes.Blue, new Point(100, 130));
             e.Graphics.DrawString("Total Amount:" + salesListDisplay.SelectedRows[0].Cells[3].Value.ToString(), new Font("century Gothic", 20, FontStyle.Bold), Brushes.Blue, new Point(100, 160));
             e.Graphics.DrawString("CodeSpace", new Font("century Gothic", 20, FontStyle.Italic), Brushes.Red, new Point(270,220));
@@ -193,6 +196,11 @@ namespace shoprite_Inventory_App
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
             this.Hide();
+        }
+
+        private void attendantNameLable_Click(object sender, EventArgs e)
+        {
+
         }
     }
     

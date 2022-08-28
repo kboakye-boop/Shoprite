@@ -34,7 +34,6 @@ namespace shoprite_Inventory_App
             this.label2 = new System.Windows.Forms.Label();
             this.loginPanel = new System.Windows.Forms.Panel();
             this.selectRole = new System.Windows.Forms.ComboBox();
-            this.passwordTb = new System.Windows.Forms.TextBox();
             this.loginButton = new System.Windows.Forms.Button();
             this.passwordLabel = new System.Windows.Forms.TextBox();
             this.usernameLabel = new System.Windows.Forms.TextBox();
@@ -43,6 +42,8 @@ namespace shoprite_Inventory_App
             this.panel3 = new System.Windows.Forms.Panel();
             this.usernameTb = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.passwordTb = new System.Windows.Forms.TextBox();
+            this.passwordView = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.loginPanel.SuspendLayout();
             this.SuspendLayout();
@@ -75,8 +76,9 @@ namespace shoprite_Inventory_App
             // 
             this.loginPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.loginPanel.BackColor = System.Drawing.Color.White;
-            this.loginPanel.Controls.Add(this.selectRole);
+            this.loginPanel.Controls.Add(this.passwordView);
             this.loginPanel.Controls.Add(this.passwordTb);
+            this.loginPanel.Controls.Add(this.selectRole);
             this.loginPanel.Controls.Add(this.loginButton);
             this.loginPanel.Controls.Add(this.passwordLabel);
             this.loginPanel.Controls.Add(this.usernameLabel);
@@ -105,24 +107,13 @@ namespace shoprite_Inventory_App
             this.selectRole.Text = "Select Role";
             this.selectRole.SelectedIndexChanged += new System.EventHandler(this.selectRole_SelectedIndexChanged);
             // 
-            // passwordTb
-            // 
-            this.passwordTb.BackColor = System.Drawing.Color.White;
-            this.passwordTb.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.passwordTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.passwordTb.ForeColor = System.Drawing.Color.Black;
-            this.passwordTb.Location = new System.Drawing.Point(80, 236);
-            this.passwordTb.Name = "passwordTb";
-            this.passwordTb.Size = new System.Drawing.Size(314, 27);
-            this.passwordTb.TabIndex = 7;
-            // 
             // loginButton
             // 
             this.loginButton.BackColor = System.Drawing.Color.Red;
             this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.loginButton.Location = new System.Drawing.Point(92, 282);
+            this.loginButton.Location = new System.Drawing.Point(80, 316);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(289, 46);
             this.loginButton.TabIndex = 6;
@@ -199,6 +190,29 @@ namespace shoprite_Inventory_App
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // passwordTb
+            // 
+            this.passwordTb.BackColor = System.Drawing.Color.White;
+            this.passwordTb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.passwordTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.passwordTb.ForeColor = System.Drawing.Color.Black;
+            this.passwordTb.Location = new System.Drawing.Point(80, 236);
+            this.passwordTb.Name = "passwordTb";
+            this.passwordTb.Size = new System.Drawing.Size(314, 27);
+            this.passwordTb.TabIndex = 9;
+            this.passwordTb.UseSystemPasswordChar = true;
+            // 
+            // passwordView
+            // 
+            this.passwordView.AutoSize = true;
+            this.passwordView.Location = new System.Drawing.Point(80, 283);
+            this.passwordView.Name = "passwordView";
+            this.passwordView.Size = new System.Drawing.Size(129, 21);
+            this.passwordView.TabIndex = 10;
+            this.passwordView.Text = "Show Password";
+            this.passwordView.UseVisualStyleBackColor = true;
+            this.passwordView.CheckedChanged += new System.EventHandler(this.passwordView_CheckedChanged);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -228,9 +242,10 @@ namespace shoprite_Inventory_App
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.TextBox passwordLabel;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox passwordTb;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ComboBox selectRole;
+        private System.Windows.Forms.TextBox passwordTb;
+        private System.Windows.Forms.CheckBox passwordView;
     }
 }
 
