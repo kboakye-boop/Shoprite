@@ -16,7 +16,7 @@ namespace shoprite_Inventory_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SalesForm());
+            Application.Run(new CategoriesForm());
         }
     }
 }

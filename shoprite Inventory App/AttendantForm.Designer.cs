@@ -29,9 +29,9 @@ namespace shoprite_Inventory_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.AttendantDisplay = new Guna.UI.WinForms.GunaDataGridView();
             this.button3 = new System.Windows.Forms.Button();
@@ -72,30 +72,30 @@ namespace shoprite_Inventory_App
             // 
             // AttendantDisplay
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.AttendantDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.AttendantDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.AttendantDisplay.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.AttendantDisplay.BackgroundColor = System.Drawing.Color.White;
             this.AttendantDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AttendantDisplay.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.AttendantDisplay.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.AttendantDisplay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.AttendantDisplay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.AttendantDisplay.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.AttendantDisplay.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AttendantDisplay.DefaultCellStyle = dataGridViewCellStyle15;
             this.AttendantDisplay.EnableHeadersVisualStyles = false;
             this.AttendantDisplay.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.AttendantDisplay.Location = new System.Drawing.Point(493, 113);
@@ -139,7 +139,7 @@ namespace shoprite_Inventory_App
             this.button3.ForeColor = System.Drawing.Color.Red;
             this.button3.Location = new System.Drawing.Point(24, 509);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(116, 59);
+            this.button3.Size = new System.Drawing.Size(174, 62);
             this.button3.TabIndex = 11;
             this.button3.Text = "EDIT PASSWORD";
             this.button3.UseVisualStyleBackColor = false;
@@ -154,7 +154,7 @@ namespace shoprite_Inventory_App
             this.button2.ForeColor = System.Drawing.Color.Red;
             this.button2.Location = new System.Drawing.Point(24, 603);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 59);
+            this.button2.Size = new System.Drawing.Size(174, 62);
             this.button2.TabIndex = 10;
             this.button2.Text = "DELETE";
             this.button2.UseVisualStyleBackColor = false;
@@ -169,7 +169,7 @@ namespace shoprite_Inventory_App
             this.button4.ForeColor = System.Drawing.Color.Red;
             this.button4.Location = new System.Drawing.Point(23, 421);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(116, 59);
+            this.button4.Size = new System.Drawing.Size(174, 62);
             this.button4.TabIndex = 4;
             this.button4.Text = "ADD";
             this.button4.UseVisualStyleBackColor = false;
