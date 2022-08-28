@@ -62,7 +62,7 @@ namespace shoprite_Inventory_App
         {
             ProductsForm productsForm = new ProductsForm();
             productsForm.Show();
-            productsForm.Hide();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)

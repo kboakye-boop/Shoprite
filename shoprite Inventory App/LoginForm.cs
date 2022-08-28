@@ -48,7 +48,7 @@ namespace shoprite_Inventory_App
 
                     if (selectRole.SelectedItem.ToString() == "ADMIN")
                     {
-                        if(usernameTb.Text == "ADMIN" && passwordTb.Text == "ADMIN")
+                        if(usernameTb.Text == "admin" && passwordTb.Text == "admin")
                         {
                             ProductsForm productsForm = new ProductsForm();
                             productsForm.Show();
