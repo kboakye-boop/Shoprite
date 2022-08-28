@@ -86,5 +86,10 @@ namespace shoprite_Inventory_App
         {
 
         }
+
+        private void selectRole_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

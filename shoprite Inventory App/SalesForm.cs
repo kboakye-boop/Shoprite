@@ -31,6 +31,21 @@ namespace shoprite_Inventory_App
 
 
         }
+        private void salesDropdown()
+        {
+            //connecting the dropdown to the database
+            Con.Open();
+            SqlCommand cmd = new SqlCommand("select CatName from CategoriesTable1", Con);
+            SqlDataReader reader;
+            reader = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("CatName", typeof(string));
+            dt.Load(reader);
+            ProductCat.ValueMember = "CatName";
+            ProductCat.DataSource = dt;
+            Con.Close();
+
+        }
         private void populateBill()
         {
             Con.Open();
@@ -49,6 +64,7 @@ namespace shoprite_Inventory_App
         {
             populate();
             populateBill();
+            salesDropdown();
         }
         int flag = 0;
         private void salesDisplay_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -154,6 +170,29 @@ namespace shoprite_Inventory_App
         private void ProductCat_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void ProductCat_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            
+                Con.Open();
+                String query = "select ProductName,ProductPrice from ProductTables1 where ProductCat = '" + ProductCat.SelectedValue.ToString() + "'";
+                SqlDataAdapter adapter = new SqlDataAdapter(query, Con);
+                SqlCommandBuilder commandBuilder = new SqlCommandBuilder(adapter);
+                var Data = new DataSet();
+                adapter.Fill(Data);
+                salesDisplay.DataSource = Data.Tables[0];
+                Con.Close();
+           
+        }
+
+       
+
+        private void label8_Click_1(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
         }
     }
     

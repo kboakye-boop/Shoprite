@@ -30,11 +30,40 @@ namespace shoprite_Inventory_App
             DataTable dt = new DataTable();
             dt.Columns.Add("CatName", typeof(string));
             dt.Load(reader);
+            ProductDropdown.ValueMember = "CatName";
+            ProductDropdown.DataSource = dt;
             ProductCat.ValueMember = "CatName";
             ProductCat.DataSource = dt;
-
             Con.Close();
 
+        }
+        private void productDropdownDisplay()
+        {
+            //connecting the dropdown to the database
+            Con.Open();
+            SqlCommand cmd = new SqlCommand("select CatName from CategoriesTable1", Con);
+            SqlDataReader reader;
+            reader = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("CatName", typeof(string));
+            dt.Load(reader);
+            ProductDropdown.ValueMember = "CatName";
+            ProductDropdown.DataSource = dt;
+            Con.Close();
+
+        }
+
+
+        private void productDropdown()
+        {
+            Con.Open();
+            String query = "select * from ProductTables1 where ProductCat = '" + ProductDropdown.SelectedValue.ToString() + "'";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder commandBuilder = new SqlCommandBuilder(adapter);
+            var Data = new DataSet();
+            adapter.Fill(Data);
+            productDisplay.DataSource = Data.Tables[0];
+            Con.Close();
         }
         private void populate()
         {
@@ -51,6 +80,7 @@ namespace shoprite_Inventory_App
         }
         private void ProductsForm_Load(object sender, EventArgs e)
         {
+            
             categoryDropdown();
             populate();
         }
@@ -169,6 +199,28 @@ namespace shoprite_Inventory_App
         private void ProductCat_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void ProductId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+
+            productDropdown();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            populate();
+
+        }
+
+        private void ProductDropdown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

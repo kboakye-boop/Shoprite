@@ -29,15 +29,15 @@ namespace shoprite_Inventory_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalesForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -70,6 +70,7 @@ namespace shoprite_Inventory_App
             this.label1 = new System.Windows.Forms.Label();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesDisplay)).BeginInit();
@@ -202,21 +203,21 @@ namespace shoprite_Inventory_App
             // 
             // orderDisplay
             // 
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            this.orderDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.orderDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.orderDisplay.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.orderDisplay.BackgroundColor = System.Drawing.Color.White;
             this.orderDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.orderDisplay.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.orderDisplay.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.orderDisplay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.orderDisplay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.orderDisplay.ColumnHeadersHeight = 30;
             this.orderDisplay.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
@@ -224,14 +225,14 @@ namespace shoprite_Inventory_App
             this.Price,
             this.Quantity,
             this.Total});
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.orderDisplay.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.orderDisplay.DefaultCellStyle = dataGridViewCellStyle3;
             this.orderDisplay.EnableHeadersVisualStyles = false;
             this.orderDisplay.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.orderDisplay.Location = new System.Drawing.Point(480, 118);
@@ -252,14 +253,14 @@ namespace shoprite_Inventory_App
             this.orderDisplay.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.orderDisplay.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.orderDisplay.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.orderDisplay.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.orderDisplay.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.orderDisplay.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.orderDisplay.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.orderDisplay.ThemeStyle.HeaderStyle.Height = 30;
             this.orderDisplay.ThemeStyle.ReadOnly = false;
             this.orderDisplay.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.orderDisplay.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.orderDisplay.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.orderDisplay.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.orderDisplay.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
             this.orderDisplay.ThemeStyle.RowsStyle.Height = 24;
             this.orderDisplay.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -338,30 +339,30 @@ namespace shoprite_Inventory_App
             // 
             // salesDisplay
             // 
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            this.salesDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.salesDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.salesDisplay.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.salesDisplay.BackgroundColor = System.Drawing.Color.White;
             this.salesDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.salesDisplay.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.salesDisplay.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.salesDisplay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.salesDisplay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.salesDisplay.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.salesDisplay.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.salesDisplay.DefaultCellStyle = dataGridViewCellStyle6;
             this.salesDisplay.EnableHeadersVisualStyles = false;
             this.salesDisplay.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.salesDisplay.Location = new System.Drawing.Point(23, 440);
@@ -382,14 +383,14 @@ namespace shoprite_Inventory_App
             this.salesDisplay.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.salesDisplay.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.salesDisplay.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.salesDisplay.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salesDisplay.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.salesDisplay.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.salesDisplay.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.salesDisplay.ThemeStyle.HeaderStyle.Height = 30;
             this.salesDisplay.ThemeStyle.ReadOnly = false;
             this.salesDisplay.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.salesDisplay.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.salesDisplay.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.salesDisplay.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.salesDisplay.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
             this.salesDisplay.ThemeStyle.RowsStyle.Height = 28;
             this.salesDisplay.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -407,33 +408,34 @@ namespace shoprite_Inventory_App
             this.ProductCat.TabIndex = 13;
             this.ProductCat.Text = "select category";
             this.ProductCat.SelectedIndexChanged += new System.EventHandler(this.ProductCat_SelectedIndexChanged);
+            this.ProductCat.SelectionChangeCommitted += new System.EventHandler(this.ProductCat_SelectionChangeCommitted);
             // 
             // salesListDisplay
             // 
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
-            this.salesListDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.salesListDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.salesListDisplay.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.salesListDisplay.BackgroundColor = System.Drawing.Color.White;
             this.salesListDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.salesListDisplay.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.salesListDisplay.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.salesListDisplay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.salesListDisplay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.salesListDisplay.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.salesListDisplay.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.salesListDisplay.DefaultCellStyle = dataGridViewCellStyle9;
             this.salesListDisplay.EnableHeadersVisualStyles = false;
             this.salesListDisplay.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.salesListDisplay.Location = new System.Drawing.Point(480, 465);
@@ -454,14 +456,14 @@ namespace shoprite_Inventory_App
             this.salesListDisplay.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.salesListDisplay.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.salesListDisplay.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.salesListDisplay.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.salesListDisplay.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.salesListDisplay.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.salesListDisplay.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.salesListDisplay.ThemeStyle.HeaderStyle.Height = 30;
             this.salesListDisplay.ThemeStyle.ReadOnly = false;
             this.salesListDisplay.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.salesListDisplay.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.salesListDisplay.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.salesListDisplay.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.salesListDisplay.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
             this.salesListDisplay.ThemeStyle.RowsStyle.Height = 24;
             this.salesListDisplay.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -586,11 +588,25 @@ namespace shoprite_Inventory_App
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Red;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(36, 801);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(98, 29);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "Log Out";
+            this.label8.Click += new System.EventHandler(this.label8_Click_1);
+            // 
             // SalesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1369, 843);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.panel1);
             this.Name = "SalesForm";
             this.Text = "SalesForm";
@@ -601,6 +617,7 @@ namespace shoprite_Inventory_App
             ((System.ComponentModel.ISupportInitialize)(this.salesDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesListDisplay)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -637,5 +654,6 @@ namespace shoprite_Inventory_App
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.Label label8;
     }
 }

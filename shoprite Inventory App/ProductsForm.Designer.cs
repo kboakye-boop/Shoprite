@@ -29,9 +29,9 @@ namespace shoprite_Inventory_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductsForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -54,6 +54,8 @@ namespace shoprite_Inventory_App
             this.button7 = new System.Windows.Forms.Button();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.ProductDropdown = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productDisplay)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +63,8 @@ namespace shoprite_Inventory_App
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.ProductDropdown);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.ProductCat);
             this.panel1.Controls.Add(this.productDisplay);
@@ -108,30 +112,30 @@ namespace shoprite_Inventory_App
             // 
             // productDisplay
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.productDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.productDisplay.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.productDisplay.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.productDisplay.BackgroundColor = System.Drawing.Color.White;
             this.productDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.productDisplay.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.productDisplay.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.productDisplay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.productDisplay.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.productDisplay.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.productDisplay.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.productDisplay.DefaultCellStyle = dataGridViewCellStyle9;
             this.productDisplay.EnableHeadersVisualStyles = false;
             this.productDisplay.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.productDisplay.Location = new System.Drawing.Point(480, 118);
@@ -287,6 +291,7 @@ namespace shoprite_Inventory_App
             this.ProductId.Name = "ProductId";
             this.ProductId.Size = new System.Drawing.Size(211, 30);
             this.ProductId.TabIndex = 3;
+            this.ProductId.TextChanged += new System.EventHandler(this.ProductId_TextChanged);
             // 
             // label2
             // 
@@ -371,6 +376,34 @@ namespace shoprite_Inventory_App
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
+            // ProductDropdown
+            // 
+            this.ProductDropdown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductDropdown.ForeColor = System.Drawing.Color.Red;
+            this.ProductDropdown.FormattingEnabled = true;
+            this.ProductDropdown.Location = new System.Drawing.Point(634, 79);
+            this.ProductDropdown.Name = "ProductDropdown";
+            this.ProductDropdown.Size = new System.Drawing.Size(211, 33);
+            this.ProductDropdown.TabIndex = 15;
+            this.ProductDropdown.Text = "select category";
+            this.ProductDropdown.SelectedIndexChanged += new System.EventHandler(this.ProductDropdown_SelectedIndexChanged);
+            this.ProductDropdown.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectionChangeCommitted);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(860, 78);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(147, 33);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Refresh";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // ProductsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -415,5 +448,7 @@ namespace shoprite_Inventory_App
         private System.Windows.Forms.ComboBox ProductCat;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.ComboBox ProductDropdown;
+        private System.Windows.Forms.Button button1;
     }
 }

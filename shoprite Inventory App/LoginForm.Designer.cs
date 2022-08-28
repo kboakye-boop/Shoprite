@@ -103,6 +103,7 @@ namespace shoprite_Inventory_App
             this.selectRole.Size = new System.Drawing.Size(144, 33);
             this.selectRole.TabIndex = 8;
             this.selectRole.Text = "Select Role";
+            this.selectRole.SelectedIndexChanged += new System.EventHandler(this.selectRole_SelectedIndexChanged);
             // 
             // passwordTb
             // 
