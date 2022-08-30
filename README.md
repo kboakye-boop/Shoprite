@@ -36,15 +36,15 @@ Splash Screen <br />
 LogIn Page <br />
 <img src= "https://user-images.githubusercontent.com/112274284/187457630-43702ba2-e7fe-406b-8837-3a82e6517d65.png"> <br />
 Manage Products Page for Admin User<br />
-<img src= "https://user-images.githubusercontent.com/112274284/187457931-3f201b33-fb40-4880-a600-61832f6f23ef.png" width="500" height="350"> <br />
+<img src= "https://user-images.githubusercontent.com/112274284/187457931-3f201b33-fb40-4880-a600-61832f6f23ef.png"> <br />
 Manage Attendants Page for Admin User <br />
-<img src= "https://user-images.githubusercontent.com/112274284/187457993-81944f70-3e36-4b3c-9862-c7e020688917.png" width="500" height="350"> <br />
+<img src= "https://user-images.githubusercontent.com/112274284/187457993-81944f70-3e36-4b3c-9862-c7e020688917.png"> <br />
 Sales Page for Attendant Users <br />
-<img src= "https://user-images.githubusercontent.com/112274284/187457569-6a1a7626-b953-48bc-95d2-2ef7f5d10e11.png" width="500" height="350"> <br />
+<img src= "https://user-images.githubusercontent.com/112274284/187457569-6a1a7626-b953-48bc-95d2-2ef7f5d10e11.png"> <br />
 Categories Page for Admin Users <br />
-<img src= "https://user-images.githubusercontent.com/112274284/187464690-3523d382-5dba-4788-9df0-b8c236a0dc39.png" width="500" height="350"> 
+<img src= "https://user-images.githubusercontent.com/112274284/187464690-3523d382-5dba-4788-9df0-b8c236a0dc39.png"> 
 Receipt and Print Page <br />
-<img src= "https://user-images.githubusercontent.com/86963897/187433457-72d05c34-c0c1-4d34-961d-f052eb125389.png" width="450" height="350"> <br />
+<img src= "https://user-images.githubusercontent.com/86963897/187433457-72d05c34-c0c1-4d34-961d-f052eb125389.png"> <br />
 
 ## Validation
 The system has been tested and implemented successfully and thus ensured
