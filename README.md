@@ -31,16 +31,18 @@ Normal users can perform the following task <br />
 • Can generate sales report <br />
 • Can be able to change password and username <br />
 <h2> SCREENS </h2>
-Landing Screen <br />
-<img src= "https://user-images.githubusercontent.com/86963897/187432060-40842830-a8cd-4a22-bd3a-ac1975a9326f.png"> <br />
+Splash Screen <br />
+<img src= "https://user-images.githubusercontent.com/112274284/187457569-6a1a7626-b953-48bc-95d2-2ef7f5d10e11.png"> <br />
 LogIn Page <br />
-<img src= "https://user-images.githubusercontent.com/86963897/187432124-bd76543a-b3fe-4e12-8688-95613788d3cb.png"> <br />
-Manage Products Page for Administrator Edits<br />
-<img src= "https://user-images.githubusercontent.com/86963897/187432147-667d663c-84e7-45a9-9aed-0d6832d8197e.png" width="500" height="350"> <br />
-Manage Attendants Page for Administrator Edits <br />
-<img src= "https://user-images.githubusercontent.com/86963897/187432168-32241635-b4b7-46fd-8578-25a5f6106ee5.png" width="500" height="350"> <br />
-Selling Page for Attendants <br />
-<img src= "https://user-images.githubusercontent.com/86963897/187432247-1aa265d9-b856-4bf4-8177-e3e999d0fe44.png" width="500" height="350"> <br />
+<img src= "https://user-images.githubusercontent.com/112274284/187457630-43702ba2-e7fe-406b-8837-3a82e6517d65.png"> <br />
+Manage Products Page for Admin User<br />
+<img src= "https://user-images.githubusercontent.com/112274284/187457931-3f201b33-fb40-4880-a600-61832f6f23ef.png" width="500" height="350"> <br />
+Manage Attendants Page for Admin User <br />
+<img src= "https://user-images.githubusercontent.com/112274284/187457993-81944f70-3e36-4b3c-9862-c7e020688917.png" width="500" height="350"> <br />
+Sales Page for Attendant Users <br />
+<img src= "https://user-images.githubusercontent.com/112274284/187457569-6a1a7626-b953-48bc-95d2-2ef7f5d10e11.png" width="500" height="350"> <br />
+Categories Page for Admin Users <br />
+<img src= "https://user-images.githubusercontent.com/112274284/187464690-3523d382-5dba-4788-9df0-b8c236a0dc39.png" width="500" height="350"> 
 Receipt and Print Page <br />
 <img src= "https://user-images.githubusercontent.com/86963897/187433457-72d05c34-c0c1-4d34-961d-f052eb125389.png" width="450" height="350"> <br />
 
